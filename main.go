@@ -1,7 +1,7 @@
 package main
 
 import (
-	"LeetCode-Go/String"
+	"LeetCode-Go/Array"
 	"fmt"
 )
 
@@ -10,8 +10,11 @@ func main() {
 	//res := Array.CanThreePartsEqualSum(A)
 	//fmt.Println(res)
 
-	str1 := "ABABAB"
-	str2 := "ABAB"
-	res := String.GocOfStrings(str1, str2)
+	//str1 := "ABABAB"
+	//str2 := "ABAB"
+	//res := String.GocOfStrings(str1, str2)
+
+	nums := []int{1, 2, 1, 1}
+	res := Array.MajorityElement(nums)
 	fmt.Println(res)
 }
