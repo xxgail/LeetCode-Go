@@ -1,7 +1,7 @@
 package main
 
 import (
-	"LeetCode-Go/Array"
+	"LeetCode-Go/DynamicProgramming"
 	"fmt"
 )
 
@@ -14,7 +14,12 @@ func main() {
 	//str2 := "ABAB"
 	//res := String.GocOfStrings(str1, str2)
 
-	nums := []int{1, 2, 1, 1}
-	res := Array.MajorityElement(nums)
+	//nums := []int{1, 2, 1, 1}
+	//res := Array.MajorityElement(nums)
+	//fmt.Println(res)
+	//[10,9,2,5,3,7,101,18]
+	//[4,10,4,3,8,9]
+	nums := []int{10, 9, 2, 5, 3, 7, 101, 18}
+	res := DynamicProgramming.LengthOfLIS(nums)
 	fmt.Println(res)
 }
