@@ -1,7 +1,7 @@
 package main
 
 import (
-	"LeetCode-Go/DynamicProgramming"
+	"LeetCode-Go/Backtracking"
 	"fmt"
 )
 
@@ -19,7 +19,11 @@ func main() {
 	//fmt.Println(res)
 	//[10,9,2,5,3,7,101,18]
 	//[4,10,4,3,8,9]
-	nums := []int{10, 9, 2, 5, 3, 7, 101, 18}
-	res := DynamicProgramming.LengthOfLIS(nums)
+	//nums := []int{10, 9, 2, 5, 3, 7, 101, 18}
+	//res := DynamicProgramming.LengthOfLIS(nums)
+	//s := "catsandog"
+	//wordDict := []string{"cats","dog","sand","and","cat"}
+	//res := DynamicProgramming.WordBreak(s,wordDict)
+	res := Backtracking.GenerateParenthesis(3)
 	fmt.Println(res)
 }
