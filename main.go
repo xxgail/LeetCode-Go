@@ -1,8 +1,8 @@
 package main
 
 import (
-	"LeetCode-Go/Backtracking"
 	"fmt"
+	"github.com/xxgail/LeetCode-Go/LinkedList"
 )
 
 func main() {
@@ -24,6 +24,32 @@ func main() {
 	//s := "catsandog"
 	//wordDict := []string{"cats","dog","sand","and","cat"}
 	//res := DynamicProgramming.WordBreak(s,wordDict)
-	res := Backtracking.GenerateParenthesis(3)
+	//res := Backtracking.GenerateParenthesis(3)
+	one := &LinkedList.ListNode{
+		Val: 1,
+		Next: &LinkedList.ListNode{
+			Val: 3,
+			Next: &LinkedList.ListNode{
+				Val: 4,
+			},
+		},
+	}
+	two := &LinkedList.ListNode{
+		Val: 1,
+		Next: &LinkedList.ListNode{
+			Val: 4,
+			Next: &LinkedList.ListNode{
+				Val: 5,
+			},
+		},
+	}
+	three := &LinkedList.ListNode{
+		Val: 2,
+		Next: &LinkedList.ListNode{
+			Val: 6,
+		},
+	}
+	lists := []*LinkedList.ListNode{one, two, three}
+	res := LinkedList.MergeKLists(lists)
 	fmt.Println(res)
 }
