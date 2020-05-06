@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/xxgail/LeetCode-Go/BitManipulation"
+	"github.com/xxgail/LeetCode-Go/DynamicProgramming"
 )
 
 func main() {
@@ -52,7 +52,13 @@ func main() {
 	//lists := []*LinkedList.ListNode{one, two, three}
 	//res := LinkedList.MergeKLists(lists)
 	//fmt.Println(res)
-	nums := []int{1, 2, 10, 3, 3, 4, 1, 4}
-	res := BitManipulation.SingleNumbers(nums)
+	//nums := []int{1, 2, 10, 3, 3, 4, 1, 4}
+	//res := BitManipulation.SingleNumbers(nums)
+	//fmt.Println(res)
+	//fmt.Println(strings.IndexByte("widuu",'u'))
+	days := []int{6, 8, 9, 18, 20, 21, 23, 25}
+	costs := []int{2, 10, 41}
+
+	res := DynamicProgramming.MinCostTickets(days, costs)
 	fmt.Println(res)
 }
