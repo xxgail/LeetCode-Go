@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/xxgail/LeetCode-Go/DynamicProgramming"
+	"github.com/xxgail/LeetCode-Go/String"
 )
 
 func main() {
@@ -56,9 +56,48 @@ func main() {
 	//res := BitManipulation.SingleNumbers(nums)
 	//fmt.Println(res)
 	//fmt.Println(strings.IndexByte("widuu",'u'))
-	days := []int{6, 8, 9, 18, 20, 21, 23, 25}
-	costs := []int{2, 10, 41}
+	//days := []int{6, 8, 9, 18, 20, 21, 23, 25}
+	//costs := []int{2, 10, 41}
+	//
+	//res := DynamicProgramming.MinCostTickets(days, costs)
+	//fmt.Println(res)
+	//var root = &TreeNode.TreeNode{
+	//
+	//}
+	//root.Val = 1
+	//root.Left = &TreeNode.TreeNode{
+	//	Val: 2,
+	//	Left: &TreeNode.TreeNode{
+	//		Val: 5,
+	//		Left: nil,
+	//		Right: nil,
+	//	},
+	//	Right: &TreeNode.TreeNode{
+	//		Val: 7,
+	//		Left: nil,
+	//		Right: nil,
+	//	},
+	//}
+	//root.Right = &TreeNode.TreeNode{
+	//	Val: 3,
+	//	Left: &TreeNode.TreeNode{
+	//		Val: 6,
+	//		Left: nil,
+	//		Right: nil,
+	//	},
+	//	Right: &TreeNode.TreeNode{
+	//		Val: 8,
+	//		Left: nil,
+	//		Right: nil,
+	//	},
+	//}
+	//res := TreeNode.LevelOrder(root)
+	//fmt.Println(res)
 
-	res := DynamicProgramming.MinCostTickets(days, costs)
-	fmt.Println(res)
+	//matrix := [][]byte{{'1','0','1','0','0'},{'1','0','1','1','1'},{'1','1','1','1','1'},{'1','0','0','1','0'}}
+	//matrix = [][]byte{{'1'}}
+	//res1 := DynamicProgramming.MaximalSquare(matrix)
+	//fmt.Println(res1)
+
+	fmt.Println(String.ValidPalindrome("abccda"))
 }
