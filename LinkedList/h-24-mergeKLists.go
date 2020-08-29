@@ -15,13 +15,13 @@ type ListNode struct {
  * 示例:
  * 输入:
  * [
- *   1->4->5,
- *   1->3->4,
- *   2->6
+ *  1->4->5,
+ *  1->3->4,
+ *  2->6
  * ]
  * 输出: 1->1->2->3->4->4->5->6
- * @params
- * @return
+ * @params []*ListNode
+ * @return *ListNode
  */
 func MergeKLists(lists []*ListNode) *ListNode {
 	var arr []int
